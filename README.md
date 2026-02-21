@@ -1,7 +1,9 @@
 ☕ THE ROAST | Luxury Coffee Experience
+
 A cinematic, premium landing page designed for high-end coffee roastery branding. This project focuses on minimalist luxury, utilizing smooth scroll animations, a gold-on-stone color palette, and a fully responsive architectural grid.
 
 ✨ Design Philosophy
+
 The website is built to evoke a sense of "Quiet Luxury."
 
 Typography: A pairing of Playfair Display (Serif) for elegance and Inter (Sans-serif) for modern readability.
