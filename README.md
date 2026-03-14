@@ -1,51 +1,118 @@
-☕ THE ROAST | Luxury Coffee Experience
+# ☕ The Roast — Luxury Coffee Experience
 
-A cinematic, premium landing page designed for high-end coffee roastery branding. This project focuses on minimalist luxury, utilizing smooth scroll animations, a gold-on-stone color palette, and a fully responsive architectural grid.
+Hey! 👋 Welcome to the source code for **The Roast** — a cinematic, premium landing page concept for a high-end artisanal coffee roastery. This one was all about vibes. Dark, slow, intentional, luxurious. ✨
 
-✨ Design Philosophy
+---
 
-The website is built to evoke a sense of "Quiet Luxury."
+## 🌑 What Is This?
 
-Typography: A pairing of Playfair Display (Serif) for elegance and Inter (Sans-serif) for modern readability.
+A single-page marketing website for a fictional luxury coffee brand. Think less Starbucks, more "private members club that happens to serve coffee." The design language borrows from high-fashion editorial and luxury goods — tight tracking, gold accents, oversized serif type, and a lot of dark space doing a lot of heavy lifting. 🖤
 
-Palette: Stone-Dark for depth, Stone-Light for contrast, and Gold for premium accents.
+Built entirely in one HTML file. No frameworks, no build tools, just Tailwind via CDN and a handful of vanilla JS lines.
 
-Motion: Slow-burn reveal animations and cinematic hero zooms to simulate a high-fashion editorial feel.
+---
 
-🚀 Key Features
-Cinematic Loader: A custom-built JavaScript pre-loader with an elegant progress bar to ensure assets are ready before the "big reveal."
+## ✨ Features
 
-Intersection Observer API: Highly performant scroll-triggered animations (reveals, blurs, and staggers) that don't rely on heavy external libraries.
+- ⏳ **Animated Loader** — A gold progress bar slides across while *The Roast.* fades in — clean and unhurried
+- 🎬 **Slow-Zoom Hero** — The background image perpetually and slowly zooms in over 30 seconds via a CSS `@keyframes` animation. It's subtle but it makes the hero feel alive
+- 🌫️ **Blur + Fade Reveal System** — Scroll-triggered elements don't just fade in, they also un-blur (`filter: blur(20px)` → `blur(0)`) for a cinematic unveiling effect
+- ⏱️ **Staggered Animations** — Three delay tiers (`.stagger-1`, `.stagger-2`, `.stagger-3`) make grouped elements cascade in naturally
+- 🥇 **Collector's Series Cards** — Offset grid layout where the middle card drops lower than the others, creating visual depth without any JS
+- 🔍 **Hover Image Zoom on Cards** — Product images scale up on hover with a 1-second eased transition
+- 📜 **Custom Gold Scrollbar** — The browser scrollbar is styled with `var(--gold)` so even that feels premium
+- 🧭 **Shrinking Navbar on Scroll** — Nav padding tightens and background deepens after 50px of scroll
+- 📱 **Fully Responsive** — Every section reflows cleanly from mobile to 4K
 
-Responsive Grid: A mobile-first approach using Tailwind CSS, featuring an asymmetric "Collector's Series" gallery.
+---
 
-Glassmorphism Nav: A backdrop-blur navigation bar that adapts its height and opacity based on scroll position.
+## 🛠️ Tech Stack
 
-Dynamic Content: Automatically updating footer copyright year and scroll-reactive navigation.
+| What | How |
+|---|---|
+| Markup | HTML5 |
+| Styling | Tailwind CSS (CDN) + custom CSS |
+| Logic | Vanilla JavaScript |
+| Fonts | Playfair Display (serif) · Inter (sans-serif) |
+| Images | Unsplash (hero, cards, heritage) · Local (`process.png`, `detail.png`) |
 
-🛠️ Tech Stack
-Markup: HTML5
+No npm. No webpack. No React. Just a browser and a text editor. 🙌
 
-Styling: Tailwind CSS (Utility-first)
+---
 
-Interactivity: Vanilla JavaScript (ES6+)
+## 🎨 Design Language
 
-Imagery: Unsplash High-Fidelity Assets
+Every decision here was made in service of one feeling: **quiet luxury.**
 
-📂 Assets Required
-To maintain the layout's integrity, ensure the following local images are present in your root directory:
+- **Gold (`#c5a059`)** — The only warm accent in an otherwise cold, dark palette. Used sparingly so it always pops
+- **Stone Dark (`#0a0908`)** — Not quite black, has a warmth to it. Feels like a dark espresso, not a void
+- **Playfair Display italic** — The hero headline in italics at 140px feels like a magazine cover
+- **Tight letter-spacing on all caps labels** (`tracking-[0.4em]`) — A classic luxury brand trick, used throughout navigation, tags, and footers
+- **Blur-to-reveal scroll animations** — More disorienting and cinematic than a simple fade, like the image is being developed in front of you
+- **Offset card grid** — The middle card sitting 6rem lower than its siblings creates a cascading rhythm without any JavaScript
+- **Grayscale hero image with `grayscale-[0.2]`** — Not fully desaturated, which would feel cold, but close enough to feel editorial
 
-process.png - Used in the "Craft" section (Portrait/Large)
+---
 
-detail.png - Used in the "Craft" section (Detail/Small)
+## 📁 File Structure
 
-🔧 Customization
-To update the brand identity, modify the CSS variables in the <style> block:
+```
+the-roast/
+│
+├── index.html      # The whole site — one file
+├── Roast.png       # Favicon
+├── process.png     # Craft section — main image
+├── detail.png      # Craft section — detail inset image
+└── README.md       # You're here!
+```
 
-CSS
-:root {
-    --gold: #c5a059;       /* Primary Accent */
-    --stone-dark: #0a0908; /* Background */
-    --stone-light: #f8f5f2;/* Primary Text */
-}
-The Roast Artisanal. Built for the Discerning.
+> 💡 `process.png` and `detail.png` are local images used in the Craft section. Make sure they're in the same directory as `index.html` or the placeholders will be empty.
+
+---
+
+## 🚀 Running It
+
+```bash
+# Clone it
+git clone https://github.com/gauravkatnoria12/The-Roast.git
+
+# Open it
+open index.html
+```
+
+That's the whole setup. ☕
+
+---
+
+## 📄 Page Sections
+
+| Section | Vibe |
+|---|---|
+| **Loader** | Gold progress bar, italic logo reveal |
+| **Hero** | Slow-zoom background, massive serif headline, scroll indicator |
+| **Collector's Series** | Offset grid of 3 rare coffee product cards |
+| **The Craft** | Two-column layout with stacked images + roasting process copy |
+| **Heritage** | Full-viewport parallax-style image with a single quote overlaid |
+| **Footer** | Minimal 3-column links + brand tagline |
+
+---
+
+## 📬 Get In Touch
+
+Built by **Gaurav Katnoria**
+
+📧 g200005k@gmail.com
+💼 [LinkedIn](https://www.linkedin.com/in/gaurav-katnoria-78a4a33ab/)
+🐙 [GitHub](https://github.com/gauravkatnoria12/)
+
+---
+
+## 📄 License
+
+© 2026 Gaurav Katnoria. All rights reserved.
+
+"The Roast" is a fictional brand created for portfolio purposes. Feel free to study the code and get inspired, but please build your own thing from scratch. ✌️
+
+---
+
+*Built for the Discerning.* 🥃
