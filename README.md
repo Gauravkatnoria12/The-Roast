@@ -8,8 +8,6 @@ Hey! 👋 Welcome to the source code for **The Roast** — a cinematic, premium 
 
 A single-page marketing website for a fictional luxury coffee brand. Think less Starbucks, more "private members club that happens to serve coffee." The design language borrows from high-fashion editorial and luxury goods — tight tracking, gold accents, oversized serif type, and a lot of dark space doing a lot of heavy lifting. 🖤
 
-Built entirely in one HTML file. No frameworks, no build tools, just Tailwind via CDN and a handful of vanilla JS lines.
-
 ---
 
 ## ✨ Features
