@@ -32,7 +32,6 @@ Built entirely in one HTML file. No frameworks, no build tools, just Tailwind vi
 |---|---|
 | Markup | HTML5 |
 | Styling | Tailwind CSS (CDN) + custom CSS |
-| Logic | Vanilla JavaScript |
 | Fonts | Playfair Display (serif) · Inter (sans-serif) |
 | Images | Unsplash (hero, cards, heritage) · Local (`process.png`, `detail.png`) |
 
@@ -59,16 +58,10 @@ Every decision here was made in service of one feeling: **quiet luxury.**
 ```
 the-roast/
 │
+├── assets          # images
 ├── index.html      # The whole site — one file
-├── Roast.png       # Favicon
-├── process.png     # Craft section — main image
-├── detail.png      # Craft section — detail inset image
 └── README.md       # You're here!
 ```
-
-> 💡 `process.png` and `detail.png` are local images used in the Craft section. Make sure they're in the same directory as `index.html` or the placeholders will be empty.
-
----
 
 ## 🚀 Running It
 
